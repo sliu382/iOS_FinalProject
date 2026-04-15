@@ -23,8 +23,8 @@ struct RecipesListView: View {
         .onAppear{
             Task {
                 print("getRecipes called")
-                let response = try await service.getRecipes()
-                //let response = service.getMockRecipes()
+               // let response = try await service.getRecipes()
+                let response = service.getMockRecipes()
                 recipes = response
             }
         }

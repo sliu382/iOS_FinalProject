@@ -38,8 +38,16 @@ struct DetailedRecipe: Identifiable, Codable {
     let pricePerServing: Double?
     //let analyzedInstructions: [ExtendedInstruction]
     let cuisines: [String]?
+    let extendedIngredients: [Ingredient]?
     let summary: String?
     let instructions: String?
+}
+
+struct Ingredient: Identifiable, Codable {
+    let id: Int
+    let original: String
+    
+    var isChecked: Bool = false
 }
 //let servings: Int?
 //let readyInMinutes: Int?
