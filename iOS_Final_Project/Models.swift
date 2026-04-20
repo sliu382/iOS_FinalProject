@@ -40,18 +40,75 @@ struct DetailedRecipe: Identifiable, Codable {
     let cuisines: [String]?
     let extendedIngredients: [Ingredient]?
     let summary: String?
-    let instructions: String?
+    let analyzedInstructions: [Instruction]?
 }
 
 struct Ingredient: Identifiable, Codable {
     let id: Int
     let original: String
-    
-    var isChecked: Bool = false
 }
-//let servings: Int?
-//let readyInMinutes: Int?
-//let cookingMinutes: Int?
-//let sourceUrl: String?
-//let healthScore: Float?
-//let cuisines: [String]?
+
+struct Instruction: Codable {
+    let steps: [IndividualStep]
+}
+
+struct IndividualStep: Identifiable, Codable {
+    let number: Int
+    let step: String
+    var id: Int {number}
+}
+
+
+/**Meal Plan Structs**/
+struct Week: Codable {
+    let week: WeekDays
+}
+
+struct WeekDays: Codable {
+    let monday: MealPlan
+    let tuesday: MealPlan
+    let wednesday: MealPlan
+    let thursday: MealPlan
+    let friday: MealPlan
+    let saturday: MealPlan
+    let sunday: MealPlan
+}
+
+
+struct MealPlan: Codable {
+    var meals: [Recipe]
+    let nutrients: Nutrient
+}
+
+struct Nutrient: Codable {
+    let calories: Double
+    let carbohydrates: Double
+    let fat: Double
+    let protein: Double
+}
+
+
+//"week": {
+//  "monday": {
+//    "meals": [
+//      {
+//        "id": 639637,
+//        "image": "Classic-scones-639637.jpg",
+//        "imageType": "jpg",
+//        "title": "Classic scones",
+//        "readyInMinutes": 45,
+//        "servings": 4,
+//        "sourceUrl": "https://www.foodista.com/recipe/8R27PR6L/classic-scones"
+//      },
+//      {
+//        "id": 642585,
+//        "image": "Farfalle-with-fresh-tomatoes--basil-and-mozzarella-642585.jpg",
+//        "imageType": "jpg",
+//        "title": "Farfalle with fresh tomatoes, basil and mozzarella",
+//        "readyInMinutes": 15,
+//        "servings": 4,
+//        "sourceUrl": "https://www.foodista.com/recipe/B6CC3QXM/farfalle-with-fresh-tomatoes-basil-and-mozzarella"
+//      },
+//      {
+//        "id": 661094,
+//        "image": "Sp

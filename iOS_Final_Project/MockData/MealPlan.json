@@ -1,0 +1,263 @@
+{
+  "week": {
+    "monday": {
+      "meals": [
+        {
+          "id": 639637,
+          "image": "Classic-scones-639637.jpg",
+          "imageType": "jpg",
+          "title": "Classic scones",
+          "readyInMinutes": 45,
+          "servings": 4,
+          "sourceUrl": "https://www.foodista.com/recipe/8R27PR6L/classic-scones"
+        },
+        {
+          "id": 642585,
+          "image": "Farfalle-with-fresh-tomatoes--basil-and-mozzarella-642585.jpg",
+          "imageType": "jpg",
+          "title": "Farfalle with fresh tomatoes, basil and mozzarella",
+          "readyInMinutes": 15,
+          "servings": 4,
+          "sourceUrl": "https://www.foodista.com/recipe/B6CC3QXM/farfalle-with-fresh-tomatoes-basil-and-mozzarella"
+        },
+        {
+          "id": 661094,
+          "image": "Spicy-Eggplant-Spaghetti-661094.jpg",
+          "imageType": "jpg",
+          "title": "Spicy Eggplant Spaghetti",
+          "readyInMinutes": 45,
+          "servings": 2,
+          "sourceUrl": "https://www.foodista.com/recipe/8FLKXLBN/spicy-eggplant-spaghetti"
+        }
+      ],
+      "nutrients": {
+        "calories": 1737.64,
+        "protein": 43.9,
+        "fat": 65.53,
+        "carbohydrates": 243.23
+      }
+    },
+    "tuesday": {
+      "meals": [
+        {
+          "id": 644854,
+          "image": "Gluten-Free-Quinoa-and-Corn-Flour-Crepes-644854.jpg",
+          "imageType": "jpg",
+          "title": "Gluten Free Quinoa and Corn Flour Crepes",
+          "readyInMinutes": 60,
+          "servings": 4,
+          "sourceUrl": "http://www.foodista.com/recipe/MGMB6CBY/gluten-free-quinoa-and-corn-flour-crepes"
+        },
+        {
+          "id": 643634,
+          "image": "Fresh-Tomatoes-With-Beans-and-Macaroni-643634.jpg",
+          "imageType": "jpg",
+          "title": "Macaroni with Fresh Tomatoes and Beans",
+          "readyInMinutes": 25,
+          "servings": 4,
+          "sourceUrl": "https://www.foodista.com/recipe/LY45JTQD/fresh-tomatoes-with-beans-and-macaroni"
+        },
+        {
+          "id": 654935,
+          "image": "Pasta-with-Peas-and-Italian-Sausage-654935.jpg",
+          "imageType": "jpg",
+          "title": "Pasta with Peas and Italian Sausage",
+          "readyInMinutes": 45,
+          "servings": 4,
+          "sourceUrl": "https://www.foodista.com/recipe/6TFQVSP7/pasta-with-peas-and-italian-sausage"
+        }
+      ],
+      "nutrients": {
+        "calories": 1772.39,
+        "protein": 55.71,
+        "fat": 53.19,
+        "carbohydrates": 274.62
+      }
+    },
+    "wednesday": {
+      "meals": [
+        {
+          "id": 663867,
+          "image": "Tropical-Steel-Cut-Oatmeal-663867.jpg",
+          "imageType": "jpg",
+          "title": "Tropical Steel Cut Oatmeal",
+          "readyInMinutes": 45,
+          "servings": 2,
+          "sourceUrl": "https://www.foodista.com/recipe/ZCNSQVZG/tropical-steel-cut-oatmeal"
+        },
+        {
+          "id": 653251,
+          "image": "Noodles-and-Veggies-With-Peanut-Sauce-653251.jpg",
+          "imageType": "jpg",
+          "title": "Noodles and Veggies With Peanut Sauce",
+          "readyInMinutes": 30,
+          "servings": 4,
+          "sourceUrl": "https://www.foodista.com/recipe/5VRHVVWQ/noodles-and-veggies-with-peanut-sauce"
+        },
+        {
+          "id": 1697703,
+          "image": "butternut-squash-pasta-1697703.jpg",
+          "imageType": "jpg",
+          "title": "Butternut Squash Pasta",
+          "readyInMinutes": 60,
+          "servings": 4,
+          "sourceUrl": "https://maplewoodroad.com/butternut-squash-pasta/"
+        }
+      ],
+      "nutrients": {
+        "calories": 1913.52,
+        "protein": 64.06,
+        "fat": 65.02,
+        "carbohydrates": 274.02
+      }
+    },
+    "thursday": {
+      "meals": [
+        {
+          "id": 716276,
+          "image": "doughnuts-716276.jpg",
+          "imageType": "jpg",
+          "title": "Doughnuts",
+          "readyInMinutes": 45,
+          "servings": 2,
+          "sourceUrl": "https://www.afrolems.com/2014/03/25/doughnuts-recipe/"
+        },
+        {
+          "id": 1070648,
+          "image": "easy-tomato-basil-chicken-one-pot-meal-1070648.jpg",
+          "imageType": "jpg",
+          "title": "Easy Tomato Basil Chicken – One Pot Meal",
+          "readyInMinutes": 30,
+          "servings": 6,
+          "sourceUrl": "https://www.pinkwhen.com/one-pot-meal-chicken-recipe/"
+        },
+        {
+          "id": 652130,
+          "image": "Mixed-Mushroom-Sauce-Over-Tagliatelle-Pasta-652130.jpg",
+          "imageType": "jpg",
+          "title": "Mixed Mushroom Sauce Over Tagliatelle Pasta",
+          "readyInMinutes": 45,
+          "servings": 2,
+          "sourceUrl": "https://www.foodista.com/recipe/72RK67LC/mixed-mushroom-sauce-over-tagliatelle-pasta"
+        }
+      ],
+      "nutrients": {
+        "calories": 1794.05,
+        "protein": 49.57,
+        "fat": 65.33,
+        "carbohydrates": 252.07
+      }
+    },
+    "friday": {
+      "meals": [
+        {
+          "id": 647084,
+          "image": "Homemade-Pumpkin-Muffins-647084.jpg",
+          "imageType": "jpg",
+          "title": "Homemade Pumpkin Muffins",
+          "readyInMinutes": 45,
+          "servings": 18,
+          "sourceUrl": "https://www.foodista.com/recipe/D4BPXNKR/homemade-pumpkin-muffins"
+        },
+        {
+          "id": 642585,
+          "image": "Farfalle-with-fresh-tomatoes--basil-and-mozzarella-642585.jpg",
+          "imageType": "jpg",
+          "title": "Farfalle with fresh tomatoes, basil and mozzarella",
+          "readyInMinutes": 15,
+          "servings": 4,
+          "sourceUrl": "https://www.foodista.com/recipe/B6CC3QXM/farfalle-with-fresh-tomatoes-basil-and-mozzarella"
+        },
+        {
+          "id": 634882,
+          "image": "Best-Breakfast-Burrito-634882.jpg",
+          "imageType": "jpg",
+          "title": "Best Breakfast Burrito",
+          "readyInMinutes": 45,
+          "servings": 4,
+          "sourceUrl": "https://www.foodista.com/recipe/WLQNMQ5B/best-breakfast-burrito"
+        }
+      ],
+      "nutrients": {
+        "calories": 1773.33,
+        "protein": 52.55,
+        "fat": 69.29,
+        "carbohydrates": 237.44
+      }
+    },
+    "saturday": {
+      "meals": [
+        {
+          "id": 644854,
+          "image": "Gluten-Free-Quinoa-and-Corn-Flour-Crepes-644854.jpg",
+          "imageType": "jpg",
+          "title": "Gluten Free Quinoa and Corn Flour Crepes",
+          "readyInMinutes": 60,
+          "servings": 4,
+          "sourceUrl": "http://www.foodista.com/recipe/MGMB6CBY/gluten-free-quinoa-and-corn-flour-crepes"
+        },
+        {
+          "id": 643634,
+          "image": "Fresh-Tomatoes-With-Beans-and-Macaroni-643634.jpg",
+          "imageType": "jpg",
+          "title": "Macaroni with Fresh Tomatoes and Beans",
+          "readyInMinutes": 25,
+          "servings": 4,
+          "sourceUrl": "https://www.foodista.com/recipe/LY45JTQD/fresh-tomatoes-with-beans-and-macaroni"
+        },
+        {
+          "id": 1697703,
+          "image": "butternut-squash-pasta-1697703.jpg",
+          "imageType": "jpg",
+          "title": "Butternut Squash Pasta",
+          "readyInMinutes": 60,
+          "servings": 4,
+          "sourceUrl": "https://maplewoodroad.com/butternut-squash-pasta/"
+        }
+      ],
+      "nutrients": {
+        "calories": 1908.11,
+        "protein": 62.32,
+        "fat": 64.09,
+        "carbohydrates": 278.53
+      }
+    },
+    "sunday": {
+      "meals": [
+        {
+          "id": 1100990,
+          "image": "blueberry-chocolate-cocao-superfood-pancakes-gluten-free-paleo-vegan-1100990.jpg",
+          "imageType": "jpg",
+          "title": "Blueberry, Chocolate & Cocao Superfood Pancakes - Gluten-Free/Paleo/Vegan",
+          "readyInMinutes": 30,
+          "servings": 2,
+          "sourceUrl": "https://www.foodista.com/recipe/35NX6PZB/blueberry-chocolate-cocao-superfood-pancakes-gluten-free-paleo-vegan"
+        },
+        {
+          "id": 641387,
+          "image": "Delicious-Creamy-Lentils-and-Chestnuts-Soup-641387.jpg",
+          "imageType": "jpg",
+          "title": "Delicious Creamy Lentils and Chestnuts Soup",
+          "readyInMinutes": 30,
+          "servings": 4,
+          "sourceUrl": "https://www.foodista.com/recipe/6NB227RW/delicious-creamy-lentils-and-chestnuts-soup"
+        },
+        {
+          "id": 654935,
+          "image": "Pasta-with-Peas-and-Italian-Sausage-654935.jpg",
+          "imageType": "jpg",
+          "title": "Pasta with Peas and Italian Sausage",
+          "readyInMinutes": 45,
+          "servings": 4,
+          "sourceUrl": "https://www.foodista.com/recipe/6TFQVSP7/pasta-with-peas-and-italian-sausage"
+        }
+      ],
+      "nutrients": {
+        "calories": 1802.29,
+        "protein": 52.4,
+        "fat": 69.71,
+        "carbohydrates": 249.45
+      }
+    }
+  }
+}

@@ -8,9 +8,11 @@
 import SwiftUI
 
 class RecipeService {
-    let apiKey = ""
-    func getRecipes(/*query: String*/) async throws -> [Recipe] {
-        let url = URL(string: "https://api.spoonacular.com/recipes/complexSearch?apiKey=\(apiKey)&number=2")! //query=\(query)&
+    let apiKey = "70702841d94d4a64aed448016bf9c9c0"
+    
+    /**Recipe Services**/
+    func getRecipes(query: String) async throws -> [Recipe] {
+        let url = URL(string: "https://api.spoonacular.com/recipes/complexSearch?apiKey=\(apiKey)&number=10&query=\(query)&addRecipeInformation=true")!
         
         do {
             //Request data
@@ -60,14 +62,14 @@ class RecipeService {
     func getMockDetailedRecipes() -> DetailedRecipe {
         guard let url = Bundle.main.url(forResource: "DetailRecipes", withExtension: "json"),
               let data = try? Data(contentsOf: url) else {
-            return DetailedRecipe(id: 0, title: "", image: "",imageType: "", servings: 0, readyInMinutes: 0, cookingMinutes:0,preparationMinutes:0,healthScore:0,pricePerServing:0.0,cuisines:[], extendedIngredients: [],summary: "", instructions: "")
+            return DetailedRecipe(id: 0, title: "", image: "",imageType: "", servings: 0, readyInMinutes: 0, cookingMinutes:0,preparationMinutes:0,healthScore:0,pricePerServing:0.0,cuisines:[], extendedIngredients: [],summary: "", analyzedInstructions:[])
         }
         do {
             let decoded = try JSONDecoder().decode(DetailedRecipe.self, from: data)
             return decoded
         } catch {
             print("Decoding error: ", error)
-            return DetailedRecipe(id: 0, title: "", image: "",imageType: "", servings: 0, readyInMinutes: 0, cookingMinutes:0,preparationMinutes:0,healthScore:0,pricePerServing:0.0,cuisines:[], extendedIngredients: [], summary: "", instructions: "")
+            return DetailedRecipe(id: 0, title: "", image: "",imageType: "", servings: 0, readyInMinutes: 0, cookingMinutes:0,preparationMinutes:0,healthScore:0,pricePerServing:0.0,cuisines:[], extendedIngredients: [], summary: "", analyzedInstructions:[])
         }
     }
     
