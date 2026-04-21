@@ -15,6 +15,7 @@ struct RecipeView: View {
         HStack{
             //Image
             if let imageLink = recipe.image {
+                //Loads the image corresponding to each recipe
                 AsyncImage(url: URL(string: imageLink)) { image in
                     image
                         .resizable()
@@ -24,7 +25,13 @@ struct RecipeView: View {
                         .padding(.trailing,15)
                         .padding(.leading,15)
                 } placeholder: { //what shows while image is loading
-                    Color.gray.opacity(0.1)
+                    Image("noImage")
+                        .resizable()
+                        .frame(width: 100, height: 100)
+                        .scaledToFit()
+                        .cornerRadius(10)
+                        .padding(.trailing,15)
+                        .padding(.leading,15)
                 }
                     
             } else {

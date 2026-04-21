@@ -8,19 +8,22 @@ import SwiftUI
 
 struct RecipesListView: View {
     let service: RecipeService = RecipeService()
-    @State var recipes: [Recipe]?
+    @State var recipes: [Recipe] = []
     @State private var searchTerm: String = ""
+    @Binding var weekDays: WeekDays?
     
     var body: some View {
         NavigationStack {
             VStack (spacing: 0){
-                //Search
+                //Search bar
                 HStack{
+                    //text field with state variable
                     TextField("Search recipes...", text: $searchTerm)
                         .padding()
                         .background(Color.white)
                         .cornerRadius(10)
                     
+                    //button next to search bar
                     Button {
                         searchRecipes()
                     } label: {
@@ -35,23 +38,18 @@ struct RecipesListView: View {
                 .background(Color.gray.opacity(0.1))
                 
                 
-                //List
+                //List of all the recipes
                 VStack {
-                    if let recipes {
-                        List(recipes, id: \.id) { recipe in
-                            NavigationLink {
-                                RecipeDetailedView(id: recipe.id)
-                            } label: {
-                                RecipeView(recipe: recipe)
-                            }
+                    List(recipes.indices, id: \.self) { index in
+                        NavigationLink { //leads to a more detailed version of recipe
+                            RecipeDetailedView(id: recipes[index].id, recipe: $recipes[index],weekDays: $weekDays)
+                        } label: { //Shows the recipe as the other view int he list
+                            RecipeView(recipe: recipes[index])
                         }
-                        .navigationTitle("Recipes")
-                        .scrollContentBackground(.hidden)
-                        .background(Color.gray.opacity(0.1))
-                        
-                    } else {
-                        Text("Loading ...")
                     }
+                    .navigationTitle("Recipes")
+                    .scrollContentBackground(.hidden)
+                    .background(Color.gray.opacity(0.1))
                 }
             }
         }
@@ -72,5 +70,5 @@ struct RecipesListView: View {
 }
 
 #Preview {
-    RecipesListView()
+    //RecipesListView()
 }

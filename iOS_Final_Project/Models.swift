@@ -30,13 +30,8 @@ struct DetailedRecipe: Identifiable, Codable {
     let readyInMinutes: Int?
     let cookingMinutes: Int?
     let preparationMinutes: Int?
-    //let license: String
-    //let sourceName: String
-    //let sourceUrl: String
     let healthScore: Float?
-    //let spoonacularSource: String
     let pricePerServing: Double?
-    //let analyzedInstructions: [ExtendedInstruction]
     let cuisines: [String]?
     let extendedIngredients: [Ingredient]?
     let summary: String?
@@ -65,13 +60,13 @@ struct Week: Codable {
 }
 
 struct WeekDays: Codable {
-    let monday: MealPlan
-    let tuesday: MealPlan
-    let wednesday: MealPlan
-    let thursday: MealPlan
-    let friday: MealPlan
-    let saturday: MealPlan
-    let sunday: MealPlan
+    var monday: MealPlan
+    var tuesday: MealPlan
+    var wednesday: MealPlan
+    var thursday: MealPlan
+    var friday: MealPlan
+    var saturday: MealPlan
+    var sunday: MealPlan
 }
 
 
@@ -86,29 +81,3 @@ struct Nutrient: Codable {
     let fat: Double
     let protein: Double
 }
-
-
-//"week": {
-//  "monday": {
-//    "meals": [
-//      {
-//        "id": 639637,
-//        "image": "Classic-scones-639637.jpg",
-//        "imageType": "jpg",
-//        "title": "Classic scones",
-//        "readyInMinutes": 45,
-//        "servings": 4,
-//        "sourceUrl": "https://www.foodista.com/recipe/8R27PR6L/classic-scones"
-//      },
-//      {
-//        "id": 642585,
-//        "image": "Farfalle-with-fresh-tomatoes--basil-and-mozzarella-642585.jpg",
-//        "imageType": "jpg",
-//        "title": "Farfalle with fresh tomatoes, basil and mozzarella",
-//        "readyInMinutes": 15,
-//        "servings": 4,
-//        "sourceUrl": "https://www.foodista.com/recipe/B6CC3QXM/farfalle-with-fresh-tomatoes-basil-and-mozzarella"
-//      },
-//      {
-//        "id": 661094,
-//        "image": "Sp

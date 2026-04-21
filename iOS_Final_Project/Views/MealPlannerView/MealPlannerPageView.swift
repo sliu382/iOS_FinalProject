@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MealPlannerPageView: View {
     let service: MealPlanService = MealPlanService()
-    @State var weekDays: WeekDays?
+    @Binding var weekDays: WeekDays?
     
     @State var day: [MealPlan] = []
     let week = ["Mon", "Tues", "Wed", "Thu", "Fri", "Sat", "Sun"]
@@ -19,6 +19,7 @@ struct MealPlannerPageView: View {
     
     var body: some View {
         NavigationStack {
+            //Title for the page
             HStack{
                 Text("Meal Planner")
                     .font(.system(size:30,weight:.bold))
@@ -28,7 +29,7 @@ struct MealPlannerPageView: View {
             
             VStack{
                 
-                //Top Horizontal List View
+                //Top Horizontal List View of all the day's ina  week
                 HStack {
                     ForEach(day.indices, id:\.self) { index in
                         Button {
@@ -39,6 +40,7 @@ struct MealPlannerPageView: View {
                         }
                     }
                 }
+                //shows the EachDayView when the box is clicked
                 if let index = selectedIndex {
                     EachDayView(day: $day[index])
                 }
@@ -49,9 +51,9 @@ struct MealPlannerPageView: View {
         .onAppear {
             Task{
                 print("getMealPlan called")
-                let response = try await service.getMealPlan()
-                //let response = service.getMockMealPlan()
-                weekDays = response
+                //let response = try await service.getMealPlan()
+                //***let response = service.getMockMealPlan()
+                //weekDays = response
                     
                 if let weekDays {
                     day = [weekDays.monday, weekDays.tuesday, weekDays.wednesday, weekDays.thursday, weekDays.friday, weekDays.saturday, weekDays.sunday]
@@ -60,7 +62,7 @@ struct MealPlannerPageView: View {
             }
         }
     }
-    
+    /** Uses SwiftUI's built in methods to find the current week's dates.*/
     func getWeekDates() -> [Int] {
         var dates:[Int] = []
         
@@ -76,6 +78,7 @@ struct MealPlannerPageView: View {
         return dates
     }
     
+    /**Formats a box with parameters of the day, the actual date's numerical value, and whether the button was clicked.**/
     func DateBox(day:String, dayNum: Int, clicked: Bool) -> some View {
         let textColor: Color
         let backgroundColor: Color
@@ -106,5 +109,5 @@ struct MealPlannerPageView: View {
 }
 
 #Preview {
-    MealPlannerPageView()
+    //MealPlannerPageView()
 }

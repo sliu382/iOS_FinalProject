@@ -8,24 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    let service = MealPlanService()
+    @State var weekDays: WeekDays?
+    
     @State var isRecipePageOpen: Bool = true
     @State var isMealPlannerPageOpen: Bool = false
+    
     var body: some View {
         NavigationView{
             VStack{
+                //calls the two pages depending on the state variables
                 if isRecipePageOpen {
-                    RecipesListView()
+                    RecipesListView(weekDays: $weekDays)
                 } else {
-                    MealPlannerPageView()
+                    MealPlannerPageView(weekDays: $weekDays)
                 }
             }
             .safeAreaInset(edge: .bottom) {
+                //creates the bottom task bar with the two buttons
                 HStack {
                     Button {
                         isRecipePageOpen = true
                         isMealPlannerPageOpen = false
                     } label: {
-                        //Image(systemName:"magnifyingglass")
                         MenuButton(image:"magnifyingglass",isOn: isRecipePageOpen)
                     }
                     
@@ -42,8 +47,18 @@ struct ContentView: View {
                 .background(Color.white.ignoresSafeArea(edges: .bottom))
             }
         }
+        .onAppear {
+            Task{
+                //calls the API
+                print("getMealPlan called")
+                let response = try await service.getMealPlan()
+                //let response = service.getMockMealPlan()
+                weekDays = response
+            }
+        }
     }
     
+    //changes the button look depending on if the current page corresponds with the button
     func MenuButton(image: String, isOn: Bool) -> some View {
         if isOn {
             Image(systemName: (image + ".circle.fill"))

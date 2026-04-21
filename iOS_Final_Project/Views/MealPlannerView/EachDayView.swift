@@ -10,8 +10,6 @@ import SwiftUI
 struct EachDayView: View {
     let service: MealPlanService = MealPlanService()
     @Binding var day: MealPlan
-    //@State var meals: [Recipe]?
-    //@State var nutrients: Nutrient?
     
     /**temp**/
     //@State var day: MealPlan?
@@ -38,11 +36,11 @@ struct EachDayView: View {
             
             //List of Meals for the day
             List {
-                ForEach(day.meals, id:\.id) { recipe in
+                ForEach(day.meals.indices, id:\.self) { index in
                     NavigationLink {
-                        RecipeDetailedView(id: recipe.id)
+                        RecipeDetailedView(id: day.meals[index].id, recipe: $day.meals[index], weekDays: .constant(nil), showAddButton: false)
                     } label: {
-                        RecipeView(recipe: recipe)
+                        RecipeView(recipe: day.meals[index])
                     }
                 }
                 .onDelete { indexSet in
