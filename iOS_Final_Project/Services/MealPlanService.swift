@@ -8,7 +8,7 @@
 import SwiftUI
 
 class MealPlanService {
-    let apiKey = "70702841d94d4a64aed448016bf9c9c0"
+    let apiKey = ""
     
     /**getting data from API**/
     func getMealPlan() async throws -> WeekDays {
