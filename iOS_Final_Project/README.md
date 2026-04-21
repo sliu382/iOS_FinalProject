@@ -7,11 +7,11 @@ Meal times can get stressful when your schedule is packed and you have limited t
 This app utilizes Spoonacular's API to search through recipes and to generate a meal plan.
 
 ## Screenshots and Demo Video
-https://github.com/sliu382/iOS_FinalProject/blob/main/iOS_Final_Project/Screenshot%202026-04-20%20at%2011.00.09%20PM.jpg?raw=true 
+![image alt](https://github.com/sliu382/iOS_FinalProject/blob/main/iOS_Final_Project/Screenshot%202026-04-20%20at%2011.00.09%20PM.jpg?raw=true)
 
-https://github.com/sliu382/iOS_FinalProject/blob/main/iOS_Final_Project/Screenshot%202026-04-20%20at%2011.25.38%20PM.jpg?raw=true 
+![image alt](https://github.com/sliu382/iOS_FinalProject/blob/main/iOS_Final_Project/Screenshot%202026-04-20%20at%2011.25.38%20PM.jpg?raw=true)
 
-https://github.com/sliu382/iOS_FinalProject/blob/main/iOS_Final_Project/Screenshot%202026-04-20%20at%2011.03.02%20PM.jpg?raw=true 
+![image alt](https://github.com/sliu382/iOS_FinalProject/blob/main/iOS_Final_Project/Screenshot%202026-04-20%20at%2011.03.02%20PM.jpg?raw=true)
 
 ## Features Implemented
 ### Recipe Search
