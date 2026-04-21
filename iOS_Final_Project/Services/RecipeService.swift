@@ -8,7 +8,7 @@
 import SwiftUI
 
 class RecipeService {
-    let apiKey = "70702841d94d4a64aed448016bf9c9c0"
+    let apiKey = ""
     
     /**Recipe Services**/
     func getRecipes(query: String) async throws -> [Recipe] {
