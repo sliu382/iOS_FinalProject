@@ -13,6 +13,8 @@ This app utilizes Spoonacular's API to search through recipes and to generate a 
 
 ![image alt](https://github.com/sliu382/iOS_FinalProject/blob/main/iOS_Final_Project/Screenshot%202026-04-20%20at%2011.03.02%20PM.jpg?raw=true)
 
+https://github.com/user-attachments/assets/54fa0b61-ba69-49f7-9683-daacd050cbf6 
+
 ## Features Implemented
 ### Recipe Search
 The recipe search page allows for users to search throw Spoonacular's catalog of recipes. Once the user sees a recipe they like, they can click on the recipe. From there, a more detailed page of the recipe will be shown. If the user likes the recipe, they can then click on the add button. The computer then prompts the user to decide the specific day they would like to add the recipe to. After pressing add again, the recipe will be added to their meal plan.
